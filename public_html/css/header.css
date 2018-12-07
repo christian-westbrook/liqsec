@@ -31,10 +31,7 @@ html, body
     text-decoration: none;
     font-family: Ubuntu;
     font-size: 1.5em;
-}
 
-.item p
-{
     display: inline-block;
     float: left;
     margin-bottom: 2em;
