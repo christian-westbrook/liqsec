@@ -24,17 +24,13 @@ html, body
      top: 0;
  }
 
-#header a
-{
-    text-decoration: none;
-    
-    margin-bottom: 0.5em;
-}
-
 .item
 {
+    text-decoration: none;
     color: white;
 
     font-family: Ubuntu;
     font-size: 1.5em;
+
+    margin-bottom: 0.5em;
 }

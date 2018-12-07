@@ -21,5 +21,5 @@
 </head>
 
 <div id="header">
-    <a href="index.php"><p class="item" id="home">LiqSec</p></a>
+    <a class="item" id="home" href="index.php"><p>LiqSec</p></a>
 </div>
