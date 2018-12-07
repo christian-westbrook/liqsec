@@ -44,18 +44,7 @@
 
                 if($stmt->execute())
                 {
-                    $sql = 'SELECT USER_ID, ROLE_ID FROM USERS WHERE EMAIL = :EMAIL AND PASSWORD = :PASSWORD';
-                    $stmt = $conn->prepare($sql);
-                    $stmt->bindParam(":EMAIL", $email, PDO::PARAM_STR);
-                    $stmt->bindParam(":PASSWORD", $ciphertext, PDO::PARAM_STR);
-
-                    if($stmt->execute())
-                    {
-                        $info['USER_ID'] 	= $results[0]['USER_ID'];
-                        $info['ROLE_ID']	= $results[0]['ROLE_ID'];
-                        createSession($info);
-                        header( "Location: ../dashboard.php");
-                    }
+                    header( "Location: ../auth.php?error=0" );
                 }
                 else
                 {

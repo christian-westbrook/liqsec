@@ -22,6 +22,13 @@
         <input type="password" name="password" placeholder="Password" class="field" /></br>
         <input type="submit" value="Log In" class="field" />
     </form>
+
+    <?php
+        if($_GET['message'] == '0')
+        {
+            echo '<p id="message"><b>New account registered</b></p>';
+        }
+    ?>
 </div>
 
 <?php
