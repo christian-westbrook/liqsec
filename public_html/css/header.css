@@ -47,6 +47,16 @@ html, body
     margin: 0;
     padding: 0;
     padding-top: 0.6em;
-    padding-left: 0.8em;
-    padding-right: 0.8em;
+    padding-left: 0.6em;
+    padding-right: 0.4em;
+}
+
+.left
+{
+    float: left;
+}
+
+.right
+{
+    float: right;
 }
