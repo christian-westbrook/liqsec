@@ -15,7 +15,7 @@
     include 'header.php';
 ?>
 
-<div class="container">
+<div id="container">
     <form action="php/register-script.php" method="POST">
         <input type="text" name="email" placeholder="Email" class="field" />
         <input type="text" name="fname" placeholder="First Name" class="field" />
