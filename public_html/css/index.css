@@ -21,8 +21,13 @@ body
 {
     background: black;
 
-    width: 3em;
-    height: 2em;
+    width: 8em;
+    height: 3em;
 
     margin-left: 33%;
+}
+
+#get-started a
+{
+    text-decoration: none;
 }
