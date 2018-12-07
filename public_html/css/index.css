@@ -1,20 +1,18 @@
-#container
+body
 {
     background-image: url("../img/bar.jpg");
     background-size: 1920px 1080px;
+}
 
+#container
+{
     height: 100%;
     width: 100%;
-
-    margin: 0;
-    padding: 0;
 }
 
 #slogan
 {
     color: white;
-
     font-size: 3em;
-
     margin-top: 5em;
 }
