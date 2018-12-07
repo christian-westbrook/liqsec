@@ -27,6 +27,8 @@ html, body
 #header a
 {
     text-decoration: none;
+    
+    margin-bottom: 0.5em;
 }
 
 .item
