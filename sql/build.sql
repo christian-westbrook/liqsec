@@ -40,4 +40,4 @@ INSERT INTO ROLES (NAME) VALUES ('MEMBER');
 
 -- Initialize default admin account
 
-INSERT INTO USERS (ROLE_ID, EMAIL, PASSWORD, FNAME, LNAME, ) VALUES (1, 'admin@admin.com', '$2y$10$Opbh8vrV7j82MD36tLzrCudLDQ5.MvVf3WjXL9FA3ctDxp3NYVXam', 'Christian', 'Westbrook');
+INSERT INTO USERS (ROLE_ID, EMAIL, PASSWORD, FNAME, LNAME) VALUES (1, 'admin@admin.com', '$2y$10$Opbh8vrV7j82MD36tLzrCudLDQ5.MvVf3WjXL9FA3ctDxp3NYVXam', 'Christian', 'Westbrook');
