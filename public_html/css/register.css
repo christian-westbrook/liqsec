@@ -1,9 +1,10 @@
 /**
  * System     : LiqSec
  * Repository : https://github.com/christian-westbrook/liqsec.git
+ * File       : register.css
  * Developers : Nathan Brown, Nicholas Leonard, and Christian
  * Version    : Pre-release
- * Abstract   : Stylesheet for header.php
+ * Abstract   : Stylesheet for register.php
  */
 
  body
@@ -16,4 +17,15 @@
  {
      margin: 0 auto;
      margin-top: 27em;
+ }
+
+ form
+ {
+     margin: 0 auto;
+ }
+
+ .field
+ {
+     width: 15em;
+     height: 3em;
  }
