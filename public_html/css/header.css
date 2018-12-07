@@ -32,6 +32,8 @@ html, body
     font-family: Ubuntu;
     font-size: 1.5em;
 
+    height: 3em;
+
     display: inline-block;
     float: left;
     margin-bottom: 2em;
