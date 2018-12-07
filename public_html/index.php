@@ -15,7 +15,7 @@
 ?>
 
 <div id="container">
-    <h1 id="slogan">Redefining liquid security.</h1>
+    <h1 id="slogan"><b>Redefining liquid security.</b></h1>
 </div>
 
 <?php
