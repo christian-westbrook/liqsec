@@ -31,6 +31,8 @@
         $_POST['devices'] = $results;
     }
 ?>
+echo "HERE";
+
 
 <div id="container">
     <h1>Dashboard</h1>
