@@ -13,8 +13,9 @@ body
 {
     color: white;
     font-size: 3em;
-    margin-top: 9em;
-    margin-left: 33%;
+
+    display: block;
+    margin: 0 auto;
 }
 
 #get-started
