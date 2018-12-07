@@ -12,8 +12,6 @@
 				    0 => 'dashboard'
 	    	    );
 
-    include 'session.php';
-
     if($sessionStarted == false)
     {
        header('Location: /~iot3/');
