@@ -61,6 +61,9 @@
 
                         if($stmt->execute())
                         {
+                            $info['USER_ID'] 	= $id;
+                            $info['ROLE_ID']	= 3;
+                            createSession($info);
                             header( "Location: ../dashboard.php" );
                         }
                         else

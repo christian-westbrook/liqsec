@@ -24,11 +24,7 @@
     </form>
 
     <?php
-        if($_GET['message'] == '0')
-        {
-            echo '<p id="message"><b>New account registered</b></p>';
-        }
-        else if($_GET['error'] == '1')
+        if($_GET['error'] == '1')
         {
             echo '<p id="error"><b>Unable to contact LiqSec servers</b></p>';
         }
