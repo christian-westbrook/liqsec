@@ -28,6 +28,7 @@
     if($stmt->execute())
     {
         $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $_POST['devices'] = $results;
     }
 ?>
 
@@ -35,10 +36,12 @@
     <h1>Dashboard</h1>
 
     <?php
-        $length = count($results);
+        $devices = $_POST['devices'];
+
+        $length = count($devices);
         for($i = 0; $i < $length; $i++)
         {
-            echo '<div class="device"><p class="devname">' . $results[$i]['NAME'] . '</p></div>'
+            echo '<div class="device"><p class="devname">' . $devices[$i]['NAME'] . '</p></div>'
         }
     ?>
 </div>
