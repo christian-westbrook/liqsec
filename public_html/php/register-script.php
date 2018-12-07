@@ -35,7 +35,7 @@
             if($results)
             {
                 $sql = 'INSERT INTO USERS (ROLE_ID, EMAIL, PASSWORD, FNAME, LNAME) VALUES (3, :EMAIL, :PASSWORD, :FNAME, :LNAME)';
-                $stmt = conn->prepare($sql);
+                $stmt = $conn->prepare($sql);
                 $stmt->bindParam(":EMAIL", $email, PDO::PARAM_STR);
                 $stmt->bindParam(":PASSWORD", $ciphertext, PDO::PARAM_STR);
                 $stmt->bindParam(":FNAME", $fname, PDO::PARAM_STR);
