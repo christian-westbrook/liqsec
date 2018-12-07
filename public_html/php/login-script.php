@@ -10,7 +10,7 @@
 
     // Import statements
     include 'database.php';
-    include 'session.php';
+    include '../session.php';
 
     // Get the user information provided through POST
     $email      = $_POST['email'];
