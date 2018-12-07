@@ -34,5 +34,7 @@
 </head>
 
 <div id="header">
-    <a class="item" id="home" href="index.php"><p>LiqSec</p></a>
+    <a class="item left" id="home" href="index.php"><p>LiqSec</p></a>
+    <a class="item right" id="reg" href="register.php"><p>Sign Up</p></a>
+    <a class="item right" id="auth" href"auth.php"><p>Log In</p></a>
 </div>
