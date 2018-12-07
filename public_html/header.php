@@ -21,4 +21,5 @@
 </head>
 
 <div id="header">
+    <a href="index.php"><p class="item" id="home">LiqSec</p></a>
 </div>
