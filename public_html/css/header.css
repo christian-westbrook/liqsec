@@ -6,6 +6,12 @@
  * Abstract   : Stylesheet for header.php
  */
 
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
  #header
  {
      background: #00447C;
