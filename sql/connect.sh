@@ -1,1 +1,1 @@
-mysql -u iot3 -p
+mysql -u iot3 -pIOT3210TY
