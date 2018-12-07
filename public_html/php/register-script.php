@@ -54,7 +54,7 @@
                         $id = $results[0]['USER_ID'];
                         $devid = $keyresults[0]['DEVICE_ID'];
 
-                        $sql = 'UPDATE DEVICES SET USER_ID = :USER_ID WHERE DEVICE_ID = :DEV_ID';
+                        $sql = 'UPDATE DEVICES SET USER_ID = :USER_ID, ACTIVATE = NOW() WHERE DEVICE_ID = :DEV_ID';
                         $stmt = $conn->prepare($sql);
                         $stmt->bindParam(":USER_ID", $id, PDO::PARAM_INT);
                         $stmt->bindParam(":DEV_ID", $devid, PDO::PARAM_INT);
