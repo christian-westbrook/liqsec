@@ -14,7 +14,7 @@
 
     // Import statements
     include 'header.php';
-    include 'database.php';
+    include 'php/database.php';
 
     if($sessionStarted == false)
     {
@@ -31,8 +31,6 @@
         $_POST['devices'] = $results;
     }
 ?>
-echo "HERE";
-
 
 <div id="container">
     <h1>Dashboard</h1>
