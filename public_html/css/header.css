@@ -36,5 +36,7 @@ html, body
 
     display: inline-block;
     float: left;
-    margin-bottom: 2em;
+
+    margin: 0;
+    padding: 0;
 }
