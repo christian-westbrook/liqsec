@@ -12,12 +12,12 @@
 				    0 => 'dashboard'
 	    	    );
 
+    include 'header.php';
+
     if($sessionStarted == false)
     {
        header('Location: /~iot3/');
     }
-
-    include 'header.php';
 ?>
 
 <div id="container">
