@@ -1,0 +1,15 @@
+/**
+ * System     : LiqSec
+ * Repository : https://github.com/christian-westbrook/liqsec.git
+ * File       : dashboard.css
+ * Developers : Nathan Brown, Nicholas Leonard, and Christian
+ * Version    : Pre-release
+ * Abstract   : Stylesheet for dashboard.php
+ */
+
+ body
+ {
+     background: white;
+     margin: 0;
+     padding: 0;
+ }
