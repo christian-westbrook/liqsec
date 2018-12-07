@@ -24,14 +24,12 @@ body
     width: 8em;
     height: 3em;
 
-    display: inline-block;
+    display: block;
     margin: 0 auto;
     text-align: center;
 
     border-radius: 6px;
     border: 1px solid white;
-
-    margin: auto;
 }
 
 #get-started a
