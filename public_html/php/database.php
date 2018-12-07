@@ -11,9 +11,9 @@
 <?php
 	$host     = 'localhost';
 	$username = 'iot3';
-	$password = 'IOT3210TY';
+	$dbpass = 'IOT3210TY';
 	$dbname   = 'iot3';
-	$conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+	$conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $dbpass);
 	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 	echo "HERE";
