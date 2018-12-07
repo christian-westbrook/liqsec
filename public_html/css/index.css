@@ -20,5 +20,9 @@ body
 #get-started
 {
     background: black;
-    margin: 0 auto;
+
+    width: 3em;
+    height: 2em;
+
+    margin-left: 33%;
 }
