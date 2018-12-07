@@ -24,7 +24,8 @@
 
  #label
  {
-     font-size: 2em;
+     font-size: 2.5em;
+     color: white;
  }
 
  form
@@ -35,6 +36,6 @@
 
  .field
  {
-     width: 15em;
+     width: 18em;
      height: 3em;
  }
