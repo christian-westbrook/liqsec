@@ -16,6 +16,7 @@
 
 <div id="container">
     <h1 id="slogan"><b>Redefining liquid security.</b></h1>
+    <div id="get-started">Get Started</div>
 </div>
 
 <?php
