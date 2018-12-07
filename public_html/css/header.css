@@ -36,5 +36,5 @@ html, body
 .item p
 {
     position: absolute;
-    top: 0;
+    margin-bottom: 2em;
 }
