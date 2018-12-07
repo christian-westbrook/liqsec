@@ -25,7 +25,7 @@
 
         // Check to see if the device key exists
         $sql = 'SELECT DEVICE_ID FROM DEVICES WHERE DEV_KEY = :DEV_KEY';
-        $stmt = conn->prepare($sql);
+        $stmt = $conn->prepare($sql);
         $stmt->bindParam(":DEV_KEY", $devkey, PDO::PARAM_INT);
 
         if($stmt->execute())
