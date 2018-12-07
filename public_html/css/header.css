@@ -26,8 +26,9 @@ html, body
 
 .item
 {
-    text-decoration: none;
+    color: white;
 
+    text-decoration: none;
     font-family: Ubuntu;
     font-size: 1.5em;
 
