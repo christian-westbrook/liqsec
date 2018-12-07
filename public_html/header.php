@@ -18,6 +18,19 @@
 
     <!-- Font links -->
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+    <?php
+    	// Generates css links
+    	foreach($css as $key => $value)
+    	{
+    		echo '<link rel="stylesheet" type="text/css" href="css/' . $value . '.css" />';
+    	}
+    	// Generates js links
+    	foreach($js as $key => $value)
+    	{
+    		echo '<script src="js/' . $value . '.js"></script>';
+    	}
+	?>
 </head>
 
 <div id="header">

@@ -7,6 +7,10 @@
     // Abstract   : Landing page for LiqSec.
     // =========================================================================
 
+    $css = array(
+				    0 => 'index'
+	    	    );
+
     include 'header.php';
 ?>
 
