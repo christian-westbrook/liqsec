@@ -16,6 +16,7 @@
 ?>
 
 <div id="container">
+    <h1>Dashboard</h1>
 </div>
 
 <?php
