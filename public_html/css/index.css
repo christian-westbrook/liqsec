@@ -26,15 +26,11 @@ body
 
     display: inline-block;
     margin: 0 auto;
+    text-align: center;
 }
 
 #get-started a
 {
     text-decoration: none;
     color: white;
-}
-
-#get-started p
-{
-    margin-left: 33%;
 }
