@@ -12,7 +12,6 @@
 ?>
 
 <div id="container">
-
 </div>
 
 <?php

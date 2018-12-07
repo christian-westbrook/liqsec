@@ -13,6 +13,11 @@
 	    	    );
 
     include 'header.php';
+
+    if($_GET['error'] == '1')
+    {
+        echo '<p id="error"><b>Device key not found</b></p>';
+    }
 ?>
 
 <div id="container">

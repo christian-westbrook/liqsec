@@ -13,6 +13,11 @@
      background-size: 1920px 1080px;
  }
 
+ #error
+ {
+     color: red;
+ }
+
  #container
  {
      background: black;
