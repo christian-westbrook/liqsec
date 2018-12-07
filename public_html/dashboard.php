@@ -41,7 +41,7 @@
         $length = count($devices);
         for($i = 0; $i < $length; $i++)
         {
-            echo '<div class="device"><p class="devname">' . $devices[$i]['NAME'] . '</p></div>'
+            echo '<div class="device"><p class="devname">' . $devices[$i]['NAME'] . '</p></div>';
         }
     ?>
 </div>
