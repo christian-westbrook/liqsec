@@ -27,6 +27,11 @@ body
     display: inline-block;
     margin: 0 auto;
     text-align: center;
+
+    border-radius: 6px;
+    border: 1px solid white;
+
+    margin-left: 40%;
 }
 
 #get-started a
