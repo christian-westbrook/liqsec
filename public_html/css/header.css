@@ -27,10 +27,9 @@ html, body
 .item
 {
     text-decoration: none;
-    color: white;
 
     font-family: Ubuntu;
     font-size: 1.5em;
 
-    margin-bottom: 0.5em;
+    top: 0.5em;
 }
