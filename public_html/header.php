@@ -6,6 +6,9 @@
     // Version    : Pre-release
     // Abstract   : Landing page for LiqSec.
     // =========================================================================
+
+    // Import statements
+    include 'session.php';
 ?>
 
 <head>
@@ -34,7 +37,23 @@
 </head>
 
 <div id="header">
-    <a class="item left" id="home" href="index.php"><p>LiqSec</p></a>
-    <a class="item right" id="reg" href="register.php"><p>Sign Up</p></a>
-    <a class="item right" id="auth" href="auth.php"><p>Log In</p></a>
+    <?php
+    if($sessionStarted == true)
+    {
+    ?>
+        <a class="item left" id="home" href="index.php"><p>LiqSec</p></a>
+        <a class="item left" id="dashboard" href="dashboard.php"><p>Dashboard</p></a>
+        <a class="item right" id="logout" href="php/logout-script.php"><p>Log Out</p></a>
+
+    <?php
+    }
+    else
+    {
+    ?>
+        <a class="item left" id="home" href="index.php"><p>LiqSec</p></a>
+        <a class="item right" id="reg" href="register.php"><p>Sign Up</p></a>
+        <a class="item right" id="auth" href="auth.php"><p>Log In</p></a>
+    <?php
+    }
+    ?>
 </div>
