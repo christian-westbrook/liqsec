@@ -43,5 +43,6 @@ html, body
     margin: 0;
     padding: 0;
 
-    padding-top: 0.5em;
+    padding-top: 0.4em;
+    padding-left: 0.4em;
 }
