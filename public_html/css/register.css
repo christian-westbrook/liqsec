@@ -16,10 +16,12 @@
  #container
  {
      background: black;
-     border: solid 1px white;
+     border: solid 2px white;
      border-radius: 6px;
 
      text-align: center;
+
+     width: 22em;
 
      display: block;
      margin: 0 auto;
