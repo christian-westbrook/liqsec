@@ -10,8 +10,8 @@
     include 'header.php';
 ?>
 
-<div class="container">
-    
+<div id="container">
+
 </div>
 
 <?php
