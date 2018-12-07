@@ -31,6 +31,9 @@ html, body
     text-decoration: none;
     font-family: Ubuntu;
     font-size: 1.5em;
+}
 
+.item p
+{
     top: 0;
 }
