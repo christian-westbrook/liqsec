@@ -17,11 +17,11 @@
 
 <div id="container">
     <form action="php/register-script.php" method="POST">
-        <input type="text" name="email" placeholder="Email" class="field" />
-        <input type="text" name="fname" placeholder="First Name" class="field" />
-        <input type="text" name="lname" placeholder="Last Name" class="field" />
-        <input type="password" name="password" placeholder="Password" class="field" />
-        <input type="password" name="confirm" placeholder="Confirm" class="field" />
+        <input type="text" name="email" placeholder="Email" class="field" /></br>
+        <input type="text" name="fname" placeholder="First Name" class="field" /></br>
+        <input type="text" name="lname" placeholder="Last Name" class="field" /></br>
+        <input type="password" name="password" placeholder="Password" class="field" /></br>
+        <input type="password" name="confirm" placeholder="Confirm" class="field" /></br>
         <input type="submit" value="Sign Up" class="field" />
     </form>
 </div>
