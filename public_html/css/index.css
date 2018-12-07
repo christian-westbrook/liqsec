@@ -42,3 +42,8 @@ body
     text-decoration: none;
     color: white;
 }
+
+#get-started p
+{
+    font-size: 1.5em;
+}
