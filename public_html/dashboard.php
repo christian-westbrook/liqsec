@@ -38,6 +38,8 @@
     <?php
         $devices = $_POST['devices'];
 
+        print_r($devices);
+
         $length = count($devices);
         for($i = 0; $i < $length; $i++)
         {
