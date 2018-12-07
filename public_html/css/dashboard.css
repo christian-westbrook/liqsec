@@ -22,3 +22,14 @@
      margin-top: 5em;
      text-align: center;
  }
+
+ .device
+ {
+     background: #93a1a1;
+
+     width: 8em;
+     height: 4em;
+
+     display: block;
+     margin: 0 auto;
+ }
