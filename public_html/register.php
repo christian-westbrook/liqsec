@@ -16,6 +16,7 @@
 ?>
 
 <div id="container">
+    <p id="label"><b>Registration</b></p>
     <form action="php/register-script.php" method="POST">
         <input type="text" name="email" placeholder="Email" class="field" /></br>
         <input type="text" name="fname" placeholder="First Name" class="field" /></br>

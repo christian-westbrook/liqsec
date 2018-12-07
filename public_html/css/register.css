@@ -22,6 +22,11 @@
      margin-top: 20em;
  }
 
+ #label
+ {
+     font-size: 2em;
+ }
+
  form
  {
      display: block;
