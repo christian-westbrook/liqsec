@@ -30,4 +30,6 @@ body
 #get-started a
 {
     text-decoration: none;
+    color: white;
+    margin: 0 auto;
 }
