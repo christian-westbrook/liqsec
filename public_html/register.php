@@ -23,7 +23,7 @@
         <input type="text" name="lname" placeholder="Last Name" class="field" /></br>
         <input type="password" name="password" placeholder="Password" class="field" /></br>
         <input type="password" name="confirm" placeholder="Confirm" class="field" /></br>
-        <input type="text" name="key" placeholder="Device Key" class="field" /></br>
+        <input type="text" name="devkey" placeholder="Device Key" class="field" /></br>
         <input type="submit" value="Sign Up" class="field" />
     </form>
 
@@ -31,6 +31,10 @@
         if($_GET['error'] == '1')
         {
             echo '<p id="error"><b>Device key not found</b></p>';
+        }
+        else if($_GET['error'] == '2')
+        {
+            echo '<p id="error"><b>Unable to register account</b></p>';
         }
     ?>
 </div>
