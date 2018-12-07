@@ -30,6 +30,44 @@
         $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
         $_POST['devices'] = $results;
     }
+
+    // Time formatter function
+    function formatDateTime($datetime)
+    {
+    	$year = substr($datetime, 0, 4);
+    	$month = substr($datetime, 5, 2);
+    	$day = substr($datetime, 8, 2);
+    	$time = substr($datetime, 11, 8);
+    	switch ($month)
+    	{
+    		case "01": 	$month = 'Jan.';
+    		 			break;
+    		case "02": $month = 'Feb.';
+    					break;
+    		case "03": $month = 'Mar.';
+    					break;
+    		case "04": $month = 'Apr.';
+    					break;
+    		case "05":	$month = 'May';
+    					break;
+    		case "06":	$month = 'June';
+    					break;
+    		case "07": 	$month = 'July';
+    					break;
+    		case "08":	$month = "Aug.";
+    					break;
+    		case "09":	$month = "Sep.";
+    					break;
+    		case "10":	$month = "Oct.";
+    					break;
+    		case "11":	$month = "Nov.";
+    					break;
+    		case "12":	$month = "Dec.";
+    					break;
+    	}
+    	$formatted = $month . ' ' . $day . ', ' . $year . ' ' . $time;
+    	return $formatted;
+    }
 ?>
 
 <div id="container">
@@ -41,7 +79,7 @@
         $length = count($devices);
         for($i = 0; $i < $length; $i++)
         {
-            echo '<div class="device"><p class="devname">' . $devices[$i]['NAME'] . '</p></div></br></br>';
+            echo '<div class="device"><p class="devname">' . $devices[$i]['NAME'] . '</p><p class="devtime">' . formatDateTime($devices[$i]['ACTIVATE']) . '</p></div></br></br>';
         }
     ?>
 </div>
