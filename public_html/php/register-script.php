@@ -30,9 +30,9 @@
 
         if($stmt->execute())
         {
-            $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            $keyresults = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-            if($results)
+            if($keyresults)
             {
                 $sql = 'INSERT INTO USERS (ROLE_ID, EMAIL, PASSWORD, FNAME, LNAME) VALUES (3, :EMAIL, :PASSWORD, :FNAME, :LNAME)';
                 $stmt = $conn->prepare($sql);
@@ -43,7 +43,35 @@
 
                 if($stmt->execute())
                 {
-                    header( "Location: ../auth.php?message=0" );
+                    $sql = 'SELECT USER_ID FROM USERS WHERE EMAIL = :EMAIL';
+                    $stmt = $conn->prepare($sql);
+                    $stmt->bindParam(":EMAIL", $email, PDO::PARAM_STR);
+
+                    if($stmt->execute())
+                    {
+                        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+                        $id = $results[0]['USER_ID'];
+                        $devid = $keyresults[0]['DEVICE_ID'];
+
+                        $sql = 'UPDATE DEVICES SET USER_ID = :USER_ID WHERE DEVICE_ID = :DEV_ID';
+                        $stmt = $conn->prepare($sql);
+                        $stmt->bindParam(":USER_ID", $id, PDO::PARAM_INT);
+                        $stmt->bindParam(":DEV_ID", $devid, PDO::PARAM_INT);
+
+                        if($stmt->execute())
+                        {
+                            header( "Location: ../dashboard.php" );
+                        }
+                        else
+                        {
+                            header( "Location: ../register.php?error=1" );
+                        }
+                    }
+                    else
+                    {
+                        header( "Location: ../register.php?error=1" );
+                    }
                 }
                 else
                 {
