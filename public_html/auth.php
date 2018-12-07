@@ -5,7 +5,7 @@
     // File       : auth.php
     // Developers : Nathan Brown, Nicholas Leonard, and Christian
     // Version    : Pre-release
-    // Abstract   : Allows users to register a new account with LiqSec.
+    // Abstract   : Allows users to log in to LiqSec.
     // =========================================================================
 
     $css = array(
