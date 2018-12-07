@@ -12,16 +12,35 @@
 				    0 => 'dashboard'
 	    	    );
 
+    // Import statements
     include 'header.php';
+    include 'database.php';
 
     if($sessionStarted == false)
     {
        header('Location: /~iot3/');
     }
+
+    $sql = 'SELECT * FROM DEVICES WHERE USER_ID = :USER_ID';
+    $stmt = $conn->prepare($sql);
+    $stmt->bindParam(":USER_ID", $_SESSION['USER_ID'], PDO::PARAM_INT);
+
+    if($stmt->execute())
+    {
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 ?>
 
 <div id="container">
     <h1>Dashboard</h1>
+
+    <?php
+        $length = count($results);
+        for($i = 0; $i < $length; $i++)
+        {
+            echo '<div class="device"><p class="devname">' . $results[$i]['NAME'] . '</p></div>'
+        }
+    ?>
 </div>
 
 <?php
