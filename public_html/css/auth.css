@@ -40,6 +40,18 @@
      padding-bottom: 0.5em;
  }
 
+ #error
+ {
+     color: red;
+
+     text-align: center;
+
+     display: block;
+     margin: 0 auto;
+     margin-top: 0em;
+     padding-bottom: 0.5em;
+ }
+
  #label
  {
      font-size: 2.25em;

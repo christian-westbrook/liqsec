@@ -28,6 +28,14 @@
         {
             echo '<p id="message"><b>New account registered</b></p>';
         }
+        else if($_GET['error'] == '1')
+        {
+            echo '<p id="error"><b>Unable to contact LiqSec servers</b></p>';
+        }
+        else if($_GET['error'] == '2')
+        {
+            echo '<p id="error"><b>Invalid email or password</b></p>';
+        }
     ?>
 </div>
 

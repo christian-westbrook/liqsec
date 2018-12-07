@@ -11,7 +11,6 @@
 
     // Import statements
     include 'database.php';
-    include 'session.php';
 
     // Check if the user entered matching passwords
     if($_POST['password'] == $_POST['confirm'])
@@ -44,7 +43,7 @@
 
                 if($stmt->execute())
                 {
-                    header( "Location: ../auth.php?error=0" );
+                    header( "Location: ../auth.php?message=0" );
                 }
                 else
                 {
