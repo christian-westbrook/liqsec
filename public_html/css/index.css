@@ -14,5 +14,6 @@ body
 {
     color: white;
     font-size: 3em;
-    margin-top: 5em;
+    margin: 0 auto;
+    margin-top: 20em;
 }
