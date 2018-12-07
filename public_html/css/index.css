@@ -31,7 +31,7 @@ body
     border-radius: 6px;
     border: 1px solid white;
 
-    margin-left: 40%;
+    margin: 0 auto;
 }
 
 #get-started a
