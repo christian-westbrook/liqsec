@@ -12,6 +12,7 @@
 				    0 => 'dashboard'
 	    	    );
 
+    include 'session.php';
     include 'header.php';
 ?>
 
