@@ -24,7 +24,8 @@ body
     width: 8em;
     height: 3em;
 
-    margin-left: 33%;
+    display: inline-block;
+    margin: 0 auto;
 }
 
 #get-started a
