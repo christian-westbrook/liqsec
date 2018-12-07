@@ -35,6 +35,6 @@ html, body
 
 .item p
 {
+    position: absolute;
     top: 0;
-    padding-bottom: 3em;
 }
