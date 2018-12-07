@@ -1,9 +1,10 @@
 /**
  * System     : LiqSec
  * Repository : https://github.com/christian-westbrook/liqsec.git
+ * File       : auth.css
  * Developers : Nathan Brown, Nicholas Leonard, and Christian
  * Version    : Pre-release
- * Abstract   : Stylesheet for header.php
+ * Abstract   : Stylesheet for auth.php
  */
 
  body
@@ -14,6 +15,37 @@
 
  #container
  {
+     background: black;
+     border: solid 2px white;
+     border-radius: 12px;
+
+     text-align: center;
+
+     width: 20em;
+
+     display: block;
      margin: 0 auto;
-     margin-top: 27em;
+     margin-top: 20em;
+ }
+
+ #label
+ {
+     font-size: 2.25em;
+     color: white;
+
+     margin-top: 0.5em;
+     margin-bottom: 0.25em;
+ }
+
+ form
+ {
+     display: block;
+     margin: 0 auto;
+     margin-bottom: 1.5em;
+ }
+
+ .field
+ {
+     width: 18em;
+     height: 3em;
  }
