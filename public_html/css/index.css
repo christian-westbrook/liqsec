@@ -31,5 +31,9 @@ body
 {
     text-decoration: none;
     color: white;
-    margin: 0 auto;
+}
+
+#get-started p
+{
+    margin-left: 33%;
 }
