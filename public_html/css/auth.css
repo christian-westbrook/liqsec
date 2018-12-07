@@ -1,0 +1,19 @@
+/**
+ * System     : LiqSec
+ * Repository : https://github.com/christian-westbrook/liqsec.git
+ * Developers : Nathan Brown, Nicholas Leonard, and Christian
+ * Version    : Pre-release
+ * Abstract   : Stylesheet for header.php
+ */
+
+ body
+ {
+     background-image: url("../img/bar.jpg");
+     background-size: 1920px 1080px;
+ }
+
+ #container
+ {
+     margin: 0 auto;
+     margin-top: 27em;
+ }

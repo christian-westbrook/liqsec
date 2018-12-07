@@ -4,19 +4,18 @@
     // Repository : https://github.com/christian-westbrook/liqsec.git
     // Developers : Nathan Brown, Nicholas Leonard, and Christian
     // Version    : Pre-release
-    // Abstract   : Landing page for LiqSec.
+    // Abstract   :
     // =========================================================================
 
     $css = array(
-				    0 => 'index'
+				    0 => 'register'
 	    	    );
 
     include 'header.php';
 ?>
 
-<div id="container">
-    <h1 id="slogan"><b>Redefining liquid security.</b></h1>
-    <div id="get-started"><a href="register.php"><p>Get Started</p></a></div>
+<div class="container">
+
 </div>
 
 <?php
