@@ -13,6 +13,12 @@
 	    	    );
 
     include 'session.php';
+
+    if($sessionStarted == false)
+    {
+       header('Location: /~iot3/');
+    }
+
     include 'header.php';
 ?>
 
