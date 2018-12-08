@@ -22,7 +22,7 @@
 	$plaintext = $_POST['pin'];
 
 	// Check to see if the PIN is valid
-	if(strlen($pin) == 8 && ctype_digit($plaintext))
+	if(strlen($plaintext) == 8 && ctype_digit($plaintext))
 	{
 		$ciphertext = password_hash($plaintext, PASSWORD_DEFAULT);
 		$sql = 'UPDATE DEVICES SET PIN = :PIN WHERE DEVICE_ID = :DEV_ID AND USER_ID = :USER_ID';
