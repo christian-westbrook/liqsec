@@ -33,7 +33,7 @@
 
 			$_POST['DEV_ID'] = $results[0]['DEVICE_ID'];
 			$_POST['NAME'] = $results[0]['NAME'];
-			$_POST['ACTIVATE'] = $reuslts[0]['ACTIVATE'];
+			$_POST['ACTIVATE'] = $results[0]['ACTIVATE'];
 			$_POST['OWNER'] = $_SESSION['FNAME'] . ' ' . $_SESSION['LNAME'];
 
 			$sql = 'SELECT * FROM LOGS WHERE DEVICE_ID = :DEV_ID';
