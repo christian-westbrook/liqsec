@@ -31,11 +31,12 @@
      border-radius: 10px;
      border: solid 2px white;
 
-     width: 40em;
+     width: 25em;
      height: 4em;
 
      display: block;
      margin: 0 auto;
+     margin-top: 0.5em;
  }
 
  .devname
