@@ -109,7 +109,7 @@
 		$owner = $_POST['OWNER'];
 		$logs = $_POST['LOGS'];
 
-		echo '<p id="info"><b>Device ID:</b> ' . $devid . '</br>';
+		echo '<b>Device Log</b></br></br><p id="info"><b>Device ID:</b> ' . $devid . '</br>';
 		echo '<b>Name:</b> ' . $name . '</br>';
 		echo '<b>Owner:</b> ' . $owner . '</br>';
 		echo '<b>Activated:</b> ' . $activated . '</br></p>';
@@ -117,7 +117,7 @@
         $length = count($logs);
         for($i = 0; $i < $length; $i++)
         {
-            echo '<p class="log"><b>Device Log</b></br></br><b>Log ID:</b> ' . $logs[$i]['LOG_ID'] . ' </br><b>Log Time:</b> ' . formatDateTime($logs[$i]['LOG_TIME']) . '</p>';
+            echo '<p class="log"><b>Log ID:</b> ' . $logs[$i]['LOG_ID'] . ' </br><b>Log Time:</b> ' . formatDateTime($logs[$i]['LOG_TIME']) . '</p>';
         }
 	?>
 </div>
