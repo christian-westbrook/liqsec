@@ -19,7 +19,7 @@
     <p id="label">Register Device</p>
 
     <form action="php/reg-device-script.php" method="POST">
-        <input type="text" name="devkey" placeholder="Device Key" class="field" />
+        <input type="text" name="devkey" placeholder="Device Key" class="field" /></br>
         <input type="submit" value="Register" class="field" />
     </form>
 </div>
