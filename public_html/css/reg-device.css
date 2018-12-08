@@ -23,6 +23,18 @@
 	margin-top: 25em;
 }
 
+#error
+{
+	color: red;
+
+	text-align: center;
+
+	display: block;
+	margin: 0 auto;
+	margin-top: 0em;
+	padding-bottom: 0.5em;
+}
+
 .field
 {
 	width: 18em;

@@ -22,6 +22,13 @@
         <input type="text" name="devkey" placeholder="Device Key" class="field" /></br>
         <input type="submit" value="Register" class="field" />
     </form>
+
+    <?php
+        if($_GET['error'] == '1')
+        {
+            echo '<p id="error"><b>Invalid device key</b></p>';
+        }
+    ?>
 </div>
 
 <?php
