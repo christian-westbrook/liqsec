@@ -1,0 +1,22 @@
+/**
+ * System     : LiqSec
+ * Repository : https://github.com/christian-westbrook/liqsec.git
+ * File       : reg-device.css
+ * Developers : Nathan Brown, Nicholas Leonard, and Christian
+ * Version    : Pre-release
+ * Abstract   : Stylesheet for reg-device.php
+ */
+
+ body
+{
+	background: #002b36;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+.field
+{
+	width: 18em;
+	height: 3em;
+}
