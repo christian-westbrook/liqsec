@@ -26,6 +26,9 @@
 		$stmt = $conn->prepare($sql);
 		$stmt->bindParam(":DEV_ID", $_GET['devid'], PDO::PARAM_INT);
 		$stmt->bindParam(':USER_ID', $_SESSION['USER_ID'], PDO::PARAM_INT);
+
+        echo "HERE";
+
 		if($stmt->execute())
 		{
 			$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -44,8 +47,6 @@
 
 				$_POST['LOGS'] = $results;
 			}
-
-            echo "HERE";
 		}
 		else
 		{
