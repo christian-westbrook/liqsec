@@ -16,7 +16,7 @@
 
     if($devkey == 0)
     {
-        header( "Location: ../register.php?error=1" );
+        header( "Location: ../reg-device.php?error=1" );
     }
 
 	// Check to see if the device key exists
