@@ -113,6 +113,12 @@
 		echo '<b>Name:</b> ' . $name . '</br>';
 		echo '<b>Owner:</b> ' . $owner . '</br>';
 		echo '<b>Activated:</b> ' . $activated . '</br></p>';
+
+        $length = count($logs);
+        for($i = 0; $i < $length; $i++)
+        {
+            echo '<p class="log"><b>Log ID:</b> ' . $logs[$i]['ID'] . ' <b>Log Time:</b> ' . formatDateTime($logs[$i]['LOG_TIME']) . '</p>';
+        }
 	?>
 </div>
 
