@@ -83,7 +83,7 @@
         }
     ?>
 
-    <div class="device"><p id="reg"><b>Register new device</b></p><img src="img/add.png"></div>
+    <div class="device" id="new"><p id="reg"><b>Register new device</b></p></div>
 </div>
 
 <?php
