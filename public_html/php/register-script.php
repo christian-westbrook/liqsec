@@ -62,6 +62,7 @@
 
                         if($stmt->execute())
                         {
+                            echo 'HERE';
                             $info['USER_ID'] 	= $id;
                             $info['ROLE_ID']	= 3;
                             createSession($info);
