@@ -24,9 +24,24 @@
 	<p id="label">Update Device Pin</p>
 	<form action="update-pin-script.php" method="POST" >
 		<input type="text" name="devid" placeholder="Device ID" class="field" /></br>
-		<input type="password" name="pin" placeholder="New PIN" class="field" /></br>
+		<input type="password" name="pin" placeholder="Eight digit PIN" class="field" /></br>
 		<input type="submit" value="Update" class="field "/>
 	</form>
+
+	<?php
+        if($_GET['error'] == '1')
+        {
+            echo '<p id="error"><b>Invalid device ID</b></p>';
+        }
+        else if($_GET['error'] == '2')
+        {
+            echo '<p id="error"><b>Invalid PIN</b></p>';
+        }
+		else if($_GET['error'] == '3')
+        {
+            echo '<p id="error"><b>Unable to contact LiqSec servers</b></p>';
+        }
+    ?>
 </div>
 
 <?php
