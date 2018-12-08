@@ -16,7 +16,7 @@
     $email      = $_POST['email'];
     $plaintext  = $_POST['password'];
 
-    $sql  = 'SELECT USER_ID, PASSWORD, ROLE_ID FROM USERS WHERE EMAIL= :EMAIL';
+    $sql  = 'SELECT * FROM USERS WHERE EMAIL= :EMAIL';
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':EMAIL', $email, PDO::PARAM_STR);
     if($stmt->execute())
@@ -27,6 +27,8 @@
             $info['USER_ID'] 	= $results[0]['USER_ID'];
             $info['ROLE_ID']	= $results[0]['ROLE_ID'];
             createSession($info);
+            $_SESSION['FNAME'] = $results[0]['FNAME'];
+            $_SESSION['LNAME'] = $results[0]['LNAME'];
             header( "Location: ../dashboard.php" );
         }
         else
