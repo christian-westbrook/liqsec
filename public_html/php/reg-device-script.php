@@ -14,6 +14,11 @@
 
 	$devkey = $_POST['devkey'];
 
+    if($devkey == 0)
+    {
+        header( "Location: ../register.php?error=1" );
+    }
+
 	// Check to see if the device key exists
 	$sql = 'SELECT DEVICE_ID FROM DEVICES WHERE DEV_KEY = :DEV_KEY';
 	$stmt = $conn->prepare($sql);

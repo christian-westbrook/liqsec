@@ -30,7 +30,7 @@
     <?php
         if($_GET['error'] == '1')
         {
-            echo '<p id="error"><b>Device key not found</b></p>';
+            echo '<p id="error"><b>Invalid device key</b></p>';
         }
         else if($_GET['error'] == '2')
         {
