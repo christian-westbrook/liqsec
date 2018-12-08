@@ -120,7 +120,7 @@
 		$logs = $_POST['LOGS'];
 
 		echo '<p id="info"><b>Device Log</b></br></br><b>Device ID:</b> ' . $devid . '</br>';
-		echo '<b>Name:</b> ' . $name . '</br>';
+		echo '<b>Name:</b> <a href="update-dev-name.php"><span id="update">' . $name . '</span></a></br>';
 		echo '<b>Owner:</b> ' . $owner . '</br>';
 		echo '<b>Activated:</b> ' . $activated . '</br>';
         echo '<a href="update-pin.php"><span id="update">Change device PIN</span></a></br></p>';
