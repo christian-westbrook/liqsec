@@ -26,9 +26,10 @@
  .device
  {
      background: #eee8d5;
-     color: #93a1a1;
+     color: black;
 
      border-radius: 10px;
+     border: solid 1px black;
 
      width: 40em;
      height: 4em;
