@@ -79,7 +79,7 @@
         $length = count($devices);
         for($i = 0; $i < $length; $i++)
         {
-            echo '<div class="device"><p class="devname"><b>Device ID:</b> ' . $devices[$i]['DEVICE_ID'] . '</br><b>Name:</b> ' . $devices[$i]['NAME'] . ' </br><b>Owner:</b> ' . $_SESSION['FNAME'] . ' ' . $_SESSION['LNAME'] . '</br><b>Activated:</b> ' . formatDateTime($devices[$i]['ACTIVATE']) . '</p></div>';
+            echo '<a href="device.php?devid=' . $devices[$i]['DEVICE_ID'] . '"><div class="device"><p class="devname"><b>Device ID:</b> ' . $devices[$i]['DEVICE_ID'] . '</br><b>Name:</b> ' . $devices[$i]['NAME'] . ' </br><b>Owner:</b> ' . $_SESSION['FNAME'] . ' ' . $_SESSION['LNAME'] . '</br><b>Activated:</b> ' . formatDateTime($devices[$i]['ACTIVATE']) . '</p></div></a>';
         }
     ?>
 
