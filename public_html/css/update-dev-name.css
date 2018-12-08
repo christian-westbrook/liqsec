@@ -1,0 +1,54 @@
+/**
+ * System     : LiqSec
+ * Repository : https://github.com/christian-westbrook/liqsec.git
+ * File       : update-dev-name.css
+ * Developers : Nathan Brown, Nicholas Leonard, and Christian
+ * Version    : Pre-release
+ * Abstract   : Stylesheet for update-dev-name.php
+ */
+
+ body
+{
+   background: #002b36;
+   color: white;
+   margin: 0;
+   padding: 0;
+}
+
+#container
+{
+   display: block;
+   text-align: center;
+   margin: 0 auto;
+   margin-top: 25em;
+}
+
+#error
+{
+	color: red;
+
+	text-align: center;
+
+	display: block;
+	margin: 0 auto;
+	margin-top: 0em;
+	padding-bottom: 0.5em;
+}
+
+#message
+{
+	color: green;
+
+	text-align: center;
+
+	display: block;
+	margin: 0 auto;
+	margin-top: 0em;
+	padding-bottom: 0.5em;
+}
+
+.field
+{
+	width: 18em;
+	height: 3em;
+}
