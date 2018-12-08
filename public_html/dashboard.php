@@ -82,6 +82,8 @@
             echo '<div class="device"><p class="devname"><b>Device ID:</b> ' . $devices[$i]['DEVICE_ID'] . '</br><b>Name:</b> ' . $devices[$i]['NAME'] . ' </br><b>Activated:</b> ' . formatDateTime($devices[$i]['ACTIVATE']) . '</p></div></br></br>';
         }
     ?>
+
+    <div class="device"><p class="devname">Register new device</p></div>
 </div>
 
 <?php
