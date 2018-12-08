@@ -11,7 +11,7 @@
 
     // Import statements
     include 'database.php';
-    include 'session.php';
+    include '../session.php';
 
     // Check if the user entered matching passwords
     if($_POST['password'] == $_POST['confirm'])
