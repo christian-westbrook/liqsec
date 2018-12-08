@@ -37,7 +37,6 @@
                 $_POST['NAME'] = $results[0]['NAME'];
                 $_POST['ACTIVATE'] = $results[0]['ACTIVATE'];
                 $_POST['OWNER'] = $_SESSION['FNAME'] . ' ' . $_SESSION['LNAME'];
-                $_POST['PIN'] = $results[0]['PIN'];
 
                 $sql = 'SELECT * FROM LOGS WHERE DEVICE_ID = :DEV_ID ORDER BY LOG_TIME DESC';
                 $stmt = $conn->prepare($sql);
