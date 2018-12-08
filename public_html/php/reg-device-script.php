@@ -31,6 +31,7 @@
 		if($keyresults)
 		{
 			$id = $_SESSION['USER_ID'];
+            $devid = $keyresults[0]['DEVICE_ID'];
 
 			$sql = 'UPDATE DEVICES SET USER_ID = :USER_ID, ACTIVATE = NOW(), KEY = "" WHERE DEVICE_ID = :DEV_ID';
 			$stmt = $conn->prepare($sql);
