@@ -79,7 +79,7 @@
         $length = count($devices);
         for($i = 0; $i < $length; $i++)
         {
-            echo '<div class="device"><p class="devname"><b>Device:</b> ' . $devices[$i]['NAME'] . ' <b>Activated:</b> ' . formatDateTime($devices[$i]['ACTIVATE']) . '</p></div></br></br>';
+            echo '<div class="device"><p class="devname"><b>Device ID:</b> ' . $devices[$i]['DEVICE_ID'] . '<b>Name:</b> ' . $devices[$i]['NAME'] . ' <b>Activated:</b> ' . formatDateTime($devices[$i]['ACTIVATE']) . '</p></div></br></br>';
         }
     ?>
 </div>
