@@ -124,7 +124,7 @@
 		echo '<b>Name:</b> ' . $name . '</br>';
 		echo '<b>Owner:</b> ' . $owner . '</br>';
 		echo '<b>Activated:</b> ' . $activated . '</br>';
-        echo '<span id="update">Change device PIN</span></br></p>';
+        echo '<a href="update-pin.php"><span id="update">Change device PIN</span></a></br></p>';
         echo '<p class="log"><b>Logged Access Times</b></p>';
 
         $length = count($logs);
