@@ -37,6 +37,7 @@
                 $_POST['NAME'] = $results[0]['NAME'];
                 $_POST['ACTIVATE'] = $results[0]['ACTIVATE'];
                 $_POST['OWNER'] = $_SESSION['FNAME'] . ' ' . $_SESSION['LNAME'];
+                $_POST['PIN'] = $results[0]['PIN'];
 
                 $sql = 'SELECT * FROM LOGS WHERE DEVICE_ID = :DEV_ID ORDER BY LOG_TIME DESC';
                 $stmt = $conn->prepare($sql);
@@ -122,7 +123,8 @@
 		echo '<p id="info"><b>Device Log</b></br></br><b>Device ID:</b> ' . $devid . '</br>';
 		echo '<b>Name:</b> ' . $name . '</br>';
 		echo '<b>Owner:</b> ' . $owner . '</br>';
-		echo '<b>Activated:</b> ' . $activated . '</br></p>';
+		echo '<b>Activated:</b> ' . $activated . '</br>';
+        echo '<span id="update">Change device PIN</span></br></p>';
         echo '<p class="log"><b>Logged Access Times</b></p>';
 
         $length = count($logs);
