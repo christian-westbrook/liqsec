@@ -22,7 +22,7 @@
 
 <div id="container">
 	<p id="label">Update Device Pin</p>
-	<form action="update-pin-script.php" method="POST" >
+	<form action="php/update-pin-script.php" method="POST" >
 		<input type="text" name="devid" placeholder="Device ID" class="field" /></br>
 		<input type="password" name="pin" placeholder="Eight digit PIN" class="field" /></br>
 		<input type="submit" value="Update" class="field "/>
