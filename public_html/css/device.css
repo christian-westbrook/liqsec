@@ -14,3 +14,9 @@
      margin: 0;
      padding: 0;
  }
+
+ #info
+ {
+	 margin: 0 auto;
+	 margin-top: 4em;
+ }

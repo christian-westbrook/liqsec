@@ -108,10 +108,10 @@
 		$owner = $_POST['OWNER'];
 		$logs = $_POST['LOGS'];
 
-		echo '<p><b>Device ID:</b> ' . $devid . '</br>';
+		echo '<p id="info"><b>Device ID:</b> ' . $devid . '</br>';
 		echo '<b>Name:</b> ' . $name . '</br>';
 		echo '<b>Owner:</b> ' . $owner . '</br>';
-		echo '<b>Activated:</b> ' . $activated . '</br>';
+		echo '<b>Activated:</b> ' . $activated . '</br></p>';
 	?>
 </div>
 
