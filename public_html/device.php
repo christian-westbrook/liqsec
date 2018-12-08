@@ -23,7 +23,7 @@
 	if(isset($_GET['devid']))
 	{
 		$sql = 'SELECT * FROM DEVICES WHERE DEVICE_ID = :DEV_ID AND USER_ID = :USER_ID';
-		$stmt = conn->prepare($sql);
+		$stmt = $conn->prepare($sql);
 		$stmt->bindParam(":DEV_ID", $_GET['devid'], PDO::PARAM_INT);
 		$stmt->bindParam(':USER_ID', $_SESSION['USER_ID'], PDO::PARAM_INT);
 		if($stmt->execute())
@@ -36,7 +36,7 @@
 			$_POST['OWNER'] = $_SESSION['FNAME'] . ' ' . $_SESSION['LNAME'];
 
 			$sql = 'SELECT * FROM LOGS WHERE DEVICE_ID = :DEV_ID';
-			$stmt = conn->prepare($sql);
+			$stmt = $conn->prepare($sql);
 			$stmt->bindParam(":DEV_ID", $_GET['devid'], PDO::PARAM_INT);
 			if($stmt->execute())
 			{
