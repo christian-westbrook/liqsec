@@ -22,3 +22,9 @@
    margin: 0 auto;
    margin-top: 25em;
 }
+
+.field
+{
+	width: 18em;
+	height: 3em;
+}
