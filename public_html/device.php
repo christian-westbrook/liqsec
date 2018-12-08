@@ -113,7 +113,7 @@
 		echo '<b>Name:</b> ' . $name . '</br>';
 		echo '<b>Owner:</b> ' . $owner . '</br>';
 		echo '<b>Activated:</b> ' . $activated . '</br></p>';
-        echo '<p class="log"><b>Logged Access Times</b></p></br></br>'
+        echo '<p class="log"><b>Logged Access Times</b></p></br></br>';
 
         $length = count($logs);
         for($i = 0; $i < $length; $i++)
