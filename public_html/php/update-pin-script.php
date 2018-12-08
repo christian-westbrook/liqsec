@@ -19,12 +19,19 @@
 
 	// Get info through POST
 	$devid = $_POST['devid'];
-	$pin = $_POST['pin'];
+	$plaintext = $_POST['pin'];
 
 	// Check to see if the PIN is valid
 	if(strlen($pin) == 8 && ctype_digit($pin))
 	{
-		header( "Location: ../update-pin.php" );
+		$ciphertext = password_hash($plaintext, PASSWORD_DEFAULT);
+		$sql = 'UPDATE DEVICES SET PIN = :PIN WHERE DEVICE_ID = :DEV_ID AND USER_ID = :USER_ID';
+		$stmt = $conn->prepare($sql);
+		$stmt->bindParam(":PIN", $ciphertext, PDO::PARAM_STR);
+		$stmt->bindParam(":DEV_ID", $devid, PDO::PARAM_INT);
+		$stmt->bindParam(":USER_ID", $_SESSION['USER_ID'], PDO::PARAM_INT);
+		$stmt->execute();
+		header( "Location: ../update-pin.php?message=1" );
 	}
 	else
 	{

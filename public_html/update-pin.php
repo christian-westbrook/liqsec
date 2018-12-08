@@ -41,6 +41,10 @@
         {
             echo '<p id="error"><b>Unable to contact LiqSec servers</b></p>';
         }
+		else if($_GET['message'] == 1)
+		{
+			echo '<p id="message"><b>PIN update request sent</b></p>';
+		}
     ?>
 </div>
 
