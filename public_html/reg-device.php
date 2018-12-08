@@ -28,6 +28,10 @@
         {
             echo '<p id="error"><b>Invalid device key</b></p>';
         }
+        else if($_GET['error'] == '2')
+        {
+            echo '<p id="error"><b>Unable to contact LiqSec servers</b></p>';
+        }
     ?>
 </div>
 
