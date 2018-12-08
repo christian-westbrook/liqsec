@@ -2,6 +2,7 @@
 	function run()
 	{
 		openValve();
+		sleep(3);
 		closeValve();
 	}
 
