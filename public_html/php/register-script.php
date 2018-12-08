@@ -63,7 +63,7 @@
                         if($stmt->execute())
                         {
                             $info['USER_ID'] 	= $id;
-                            $info['ROLE_ID']	= '3';
+                            $info['ROLE_ID']	= 3;
                             createSession($info);
                             $_SESSION['FNAME'] = $fname;
                             $_SESSION['LNAME'] = $lname;
