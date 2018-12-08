@@ -22,8 +22,6 @@
 
 	if(isset($_GET['devid']))
 	{
-        echo "HERE";
-
 		$sql = 'SELECT * FROM DEVICES WHERE DEVICE_ID = :DEV_ID AND USER_ID = :USER_ID';
 		$stmt = $conn->prepare($sql);
 		$stmt->bindParam(":DEV_ID", $_GET['devid'], PDO::PARAM_INT);
@@ -46,6 +44,8 @@
 
 				$_POST['LOGS'] = $results;
 			}
+
+            echo "HERE";
 		}
 		else
 		{
