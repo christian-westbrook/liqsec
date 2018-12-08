@@ -31,20 +31,30 @@
 		{
 			$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-			$_POST['DEV_ID'] = $results[0]['DEVICE_ID'];
-			$_POST['NAME'] = $results[0]['NAME'];
-			$_POST['ACTIVATE'] = $results[0]['ACTIVATE'];
-			$_POST['OWNER'] = $_SESSION['FNAME'] . ' ' . $_SESSION['LNAME'];
+            if($results)
+            {
+                $_POST['DEV_ID'] = $results[0]['DEVICE_ID'];
+                $_POST['NAME'] = $results[0]['NAME'];
+                $_POST['ACTIVATE'] = $results[0]['ACTIVATE'];
+                $_POST['OWNER'] = $_SESSION['FNAME'] . ' ' . $_SESSION['LNAME'];
 
-			$sql = 'SELECT * FROM LOGS WHERE DEVICE_ID = :DEV_ID ORDER BY LOG_TIME DESC';
-			$stmt = $conn->prepare($sql);
-			$stmt->bindParam(":DEV_ID", $_GET['devid'], PDO::PARAM_INT);
-			if($stmt->execute())
-			{
-				$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                $sql = 'SELECT * FROM LOGS WHERE DEVICE_ID = :DEV_ID ORDER BY LOG_TIME DESC';
+                $stmt = $conn->prepare($sql);
+                $stmt->bindParam(":DEV_ID", $_GET['devid'], PDO::PARAM_INT);
+                if($stmt->execute())
+                {
+                    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-				$_POST['LOGS'] = $results;
-			}
+                    $_POST['LOGS'] = $results;
+                }
+            }
+            else
+            {
+                if(closeSession())
+    			{
+    				header('Location: /~iot3/');
+    			}
+            }
 		}
 		else
 		{
