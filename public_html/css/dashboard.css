@@ -50,7 +50,8 @@
  {
      text-align: center;
      display: inline-block;
-     margin: 0 auto;
+
+     margin-bottom: 1em;
  }
 
  .device img
@@ -59,4 +60,6 @@
      height: 50px;
 
      display: inline-block;
+     margin-top: 0.5em;
+     margin-left: 0.5em;
  }
