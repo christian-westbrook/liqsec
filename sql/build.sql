@@ -27,7 +27,7 @@ CREATE TABLE DEVICES
     DEVICE_ID   INT             NOT NULL    AUTO_INCREMENT,
     USER_ID     INT,
     DEV_KEY     INT             NOT NULL,
-    PIN         INT             NOT NULL    DEFAULT 0,
+    PIN         VARCHAR(255)    NOT NULL    DEFAULT 0,
     NAME        VARCHAR(255)    NOT NULL,
     ACTIVATE    DATETIME,
     PRIMARY KEY (DEVICE_ID),
