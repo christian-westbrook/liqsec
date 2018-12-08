@@ -1,22 +1,22 @@
 <?php
-	function run()
+	function run($oz)
 	{
 		openValve();
-		sleep(3);
+		sleep($oz);
 		closeValve();
 	}
 
 	function openValve()
 	{
-
+		// TODO
 	}
 
 	function closeValve()
 	{
-
+		// TODO
 	}
 
-	if($argc == 2)
+	if($argc == 3)
 	{
 		$host     = 'code.cis.uafs.edu';
 		$username = 'iot3';
@@ -27,6 +27,7 @@
 
 		$plaintext = $argv[1];
 		$devid = $argv[2];
+		$oz = $argv[3];
 
 		$sql = 'SELECT PIN FROM DEVICES WHERE DEVICE_ID = :DEV_ID';
 		$stmt = $conn->prepare($sql);
@@ -38,7 +39,7 @@
 
 		 if(password_verify($plaintext, $ciphertext))
 		 {
-			 run();
+			 run($oz);
 		 }
 	}
 ?>

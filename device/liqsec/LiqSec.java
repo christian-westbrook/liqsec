@@ -28,7 +28,7 @@ import liqsec.input.KeyManager;
 @SuppressWarnings("serial")
 public class LiqSec extends JFrame
 {
-	String deviceID = "1";
+	public String deviceID = "1";
 
 	// Screen dimensions
 	final int SCREEN_WIDTH = 800;

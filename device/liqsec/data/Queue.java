@@ -7,10 +7,11 @@ public class Queue
 	public Node head;
 	public int size;
 	String deviceID;
+	private LiqSec ls;
 
-	public Queue(String deviceID)
+	public Queue(LiqSec ls)
 	{
-		this.deviceID = deviceID;
+		this.ls = ls;
 		size = 0;
 	}
 
@@ -60,7 +61,7 @@ public class Queue
 	{
 		try
 		{
-			Runtime.getRuntime().exec("php verify.php " + plaintext + " " + deviceID);
+			Runtime.getRuntime().exec("php verify.php " + plaintext + " " + ls.deviceID + " " + ls.value.getText().substring(0, 2));
 		}
 		catch (IOException ex)
 		{
