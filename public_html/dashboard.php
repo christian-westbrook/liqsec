@@ -83,7 +83,7 @@
         }
     ?>
 
-    <div class="device" id="new"><p id="reg"><b>Register new device</b></p></div>
+    <a href="reg-device.php"><div class="device" id="new"><p id="reg"><b>Register new device</b></p></div></a>
 </div>
 
 <?php
