@@ -56,3 +56,4 @@
 	{
 		header( "Location: ../reg-device.php?error=2" );
 	}
+?>
