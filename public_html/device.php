@@ -36,7 +36,7 @@
 			$_POST['ACTIVATE'] = $results[0]['ACTIVATE'];
 			$_POST['OWNER'] = $_SESSION['FNAME'] . ' ' . $_SESSION['LNAME'];
 
-			$sql = 'SELECT * FROM LOGS WHERE DEVICE_ID = :DEV_ID';
+			$sql = 'SELECT * FROM LOGS WHERE DEVICE_ID = :DEV_ID ORDER BY LOG_TIME DESC';
 			$stmt = $conn->prepare($sql);
 			$stmt->bindParam(":DEV_ID", $_GET['devid'], PDO::PARAM_INT);
 			if($stmt->execute())
@@ -117,7 +117,7 @@
         $length = count($logs);
         for($i = 0; $i < $length; $i++)
         {
-            echo '<p class="log"><b>Log ID:</b> ' . $logs[$i]['LOG_ID'] . ' </br><b>Log Time:</b> ' . formatDateTime($logs[$i]['LOG_TIME']) . '</p>';
+            echo '<p class="log"><b>Log Time:</b> ' . formatDateTime($logs[$i]['LOG_TIME']) . '</p>';
         }
 	?>
 </div>
