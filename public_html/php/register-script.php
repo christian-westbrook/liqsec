@@ -65,7 +65,6 @@
                             $info['USER_ID'] 	= (string) $id;
                             $info['ROLE_ID']	= '3';
                             createSession($info);
-                            echo 'HERE';
                             $_SESSION['FNAME'] = $fname;
                             $_SESSION['LNAME'] = $lname;
                             header( "Location: ../dashboard.php" );
