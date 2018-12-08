@@ -12,6 +12,11 @@
     include 'database.php';
     include '../session.php';
 
+    if($sessionStarted == false)
+    {
+       header('Location: /~iot3/');
+    }
+
 	$devkey = $_POST['devkey'];
 
     if($devkey == 0)

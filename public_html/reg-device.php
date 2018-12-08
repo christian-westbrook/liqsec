@@ -13,6 +13,11 @@
 	    	    );
 
     include 'header.php';
+
+    if($sessionStarted == false)
+    {
+       header('Location: /~iot3/');
+    }
 ?>
 
 <div id="container">
