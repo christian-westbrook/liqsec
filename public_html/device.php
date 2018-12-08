@@ -13,7 +13,7 @@
 	    	    );
 
     include 'header.php';
-	include 'database.php';
+	include 'php/database.php';
 
 	if($sessionStarted == false)
     {
@@ -26,8 +26,6 @@
 		$stmt = $conn->prepare($sql);
 		$stmt->bindParam(":DEV_ID", $_GET['devid'], PDO::PARAM_INT);
 		$stmt->bindParam(':USER_ID', $_SESSION['USER_ID'], PDO::PARAM_INT);
-
-        echo "HERE";
 
 		if($stmt->execute())
 		{
